@@ -31,7 +31,6 @@ lazy val commonDependencies = Seq(
   "org.typelevel" %% "cats-macros" % catsV,
   "org.typelevel" %% "cats-free" % catsV,
   "org.typelevel" %% "cats-laws" % catsV,
-  "org.typelevel" %% "cats-testkit" % catsV,
   "org.typelevel" %% "kittens" % kittensV,
   "org.typelevel" %% "alleycats-core" % catsV,
   "org.typelevel" %% "mouse" % mouseV,
@@ -50,9 +49,13 @@ lazy val commonDependencies = Seq(
   "org.tpolecat" %% "doobie-h2" % doobieV,
   "org.tpolecat" %% "doobie-hikari" % doobieV,
   "org.tpolecat" %% "doobie-postgres" % doobieV,
-  "org.tpolecat" %% "doobie-specs2" % doobieV % Test,
   "com.github.pureconfig" %% "pureconfig" % pureConfigV,
-  "io.monadplus" %% "equality-core" % equalityV
+  "io.monadplus" %% "equality-core" % equalityV,
+
+  "org.scalatest" %% "scalatest" % scalaTestV % Test,
+  "org.scalacheck" %% "scalacheck" % scalaCheckV % Test,
+  "org.tpolecat" %% "doobie-scalatest" % doobieV % Test,
+  "org.typelevel" %% "cats-testkit" % catsV % Test
 )
 
 lazy val compilerFlags = Seq(
