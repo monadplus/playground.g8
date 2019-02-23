@@ -81,7 +81,7 @@ lazy val commonSettings = Seq(
   organization := "$organization$",
   scalaVersion := "$scala_version$",
   licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.html")),
-  description := "$description$",
+  description := "$project_description$",
   parallelExecution in Test := true,
   fork in Test := true,
   addCompilerPlugin("org.spire-math" % "kind-projector" % kindProjectorV cross CrossVersion.binary),
