@@ -3,7 +3,7 @@ package $package$
 import org.scalatest._
 import cats.effect._
 
-object MainSpec extends FreeSpec {
+class MainSpec extends FreeSpec {
 
   "Main" - {
     "should run a println" in {
