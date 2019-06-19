@@ -122,7 +122,7 @@ lazy val compilerOptions = Seq(
 )
 
 lazy val typeSystemEnhancements = Seq(
-  addCompilerPlugin("org.spire-math" % "kind-projector" % kindProjectorV cross CrossVersion.binary),
+  addCompilerPlugin("org.typelevel" %% "kind-projector" % kindProjectorV),
   addCompilerPlugin("com.olegpy" %% "better-monadic-for" % betterMonadicForV)
 )
 
